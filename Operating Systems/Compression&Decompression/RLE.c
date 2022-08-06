@@ -2,9 +2,9 @@
 #include<stdlib.h>
 
 void main()
-{ 
-    FILE *source = fopen("Test.txt", "r");
-    FILE *destination = fopen("Dest.txt", "w");
+{
+    FILE *source = fopen("Source_file.txt", "r");
+    FILE *destination = fopen("Destination_file.txt", "w");
     char currentChar;
     char seqChar;
     int count = 0;
