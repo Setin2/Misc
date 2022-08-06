@@ -7,7 +7,7 @@
 
 int main(int argc, char ** argv) {
 	char msg[50];
-		if (syscall(__NR_kernel_msgbox_get, msg, 50) > 50){
+		if (syscall(__NR_dm510_msgbox_get, msg, 50) > 50){
 			fprintf(stderr, "Error: The is no message in the stack right now\n");
 		} else {
 			printf("%s", msg);

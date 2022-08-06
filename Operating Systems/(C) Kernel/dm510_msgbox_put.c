@@ -15,7 +15,7 @@ int main(int argc, char ** argv) {
 			if (in[strlen(in) - 1] != '\n') {
 				fprintf(stderr, "Input too long. Only part of the message will be saved\n");
 			}
-			syscall(__NR_kernel_msgbox_put, in, strlen(in) + 1);
+			syscall(__NR_dm510_msgbox_put, in, strlen(in) + 1);
 			free(in);
 		}
 }
