@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hoply</string>
+    <string name="comment">comment</string>
+    <string name="write_post">Write Post</string>
+    <string name="top_posts">Top Posts</string>
+    <string name="write_comment" />
+    <string name="action_logOut">Log Out</string>
+    <string name="submit">submit</string>
+    <string name="log_out">Log Out</string>
+    <string name="write_your_thoughts">Write your thoughts:</string>
+    <string name="take_the_risk_or_lose_the_chance">\'Take the risk or lose the chance\'</string>
+    <string name="todo">TODO</string>
+    <string name="original_post">Original Post:</string>
+    <string name="comments">Comments:</string>
+    <string name="user_id">User Id</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="login">Login</string>
+    <string name="confirm_id">Confirm ID</string>
+    <string name="create_account">Create Account</string>
+    <string name="user_name">User Name</string>
+    <string name="edit_your_text">Edit your text:</string>
+</resources>
