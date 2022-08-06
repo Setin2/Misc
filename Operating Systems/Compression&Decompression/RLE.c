@@ -14,7 +14,7 @@ void main()
 
       if (flag || seqChar != currentChar) {
 
-         if (count >3 ) {
+         if (count > 3) {
            char ch = 'Q';
            int k = count;
            char str[100];
@@ -28,10 +28,8 @@ void main()
               fwrite(&seqChar, sizeof(char), 1, destination);
          }
          seqChar = currentChar;
-         count =1;
-      }
-
-     else count++;
+         count = 1;
+      } else count++;
 
      if(flag)
        break;
