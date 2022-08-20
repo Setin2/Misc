@@ -2,8 +2,8 @@ import praw
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 reddit = praw.Reddit(
-    client_id="qBHxOwl2iT4RX5qSyYGMiw",
-    client_secret="ALfiBaHBLtZvM8D4LyuUbo3TvxacUQ",
+    client_id="not public",
+    client_secret="not public",
     user_agent="<console:personal_weeb:1.0",
 )
 
