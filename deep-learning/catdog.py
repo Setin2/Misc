@@ -1,12 +1,10 @@
-from tensorflow import keras
+import os.path
 import tensorflow as tf
+from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Model
-from keras.layers import Input, Dense
-from keras.regularizers import l1, l2, l1_l2
+from keras.layers import Dense
 from keras.models import Sequential
-from keras.optimizers import SGD
-import os.path
 
 def create_model(resolution, load_previous_model=True):
   if os.path.isfile('catdog_model.h5') and load_previous_model: return tf.keras.models.load_model('catdog_model.h5')
