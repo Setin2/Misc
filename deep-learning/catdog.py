@@ -1,13 +1,16 @@
 import os.path
 import tensorflow as tf
+import matplotlib.pyplot as plt
 from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
-from keras.models import Model
-from keras.layers import Dense
-from keras.models import Sequential
 
 def create_model(resolution, load_previous_model=True):
-  if os.path.isfile('catdog_model.h5') and load_previous_model: return tf.keras.models.load_model('catdog_model.h5')
+  """ Return a keras model
+
+  Either load a  preexisting model, if there is one, or create a new model from scratch
+  """
+  if os.path.isfile('catdog_model.h5') and load_previous_model: 
+    return tf.keras.models.load_model('catdog_model.h5')
   else:
     # here we need to implement the model
     model = tf.keras.models.Sequential([
@@ -31,18 +34,44 @@ def create_model(resolution, load_previous_model=True):
     return model
 
 def train(training_set, validation_set, epochs, save):
-  model.fit(training_set, steps_per_epoch = len(training_set), epochs=epochs, validation_data = validation_set, validation_steps = len(validation_set))
+  history =  model.fit(training_set, steps_per_epoch = len(training_set), epochs=epochs, validation_data = validation_set, validation_steps = len(validation_set))
   model.save('catdog_model.h5')
+  return history
 
-"""
-  repository is missing the actual files
-  two directories are needed (train & validation) and each directory must have 2 subdirectories (cat, dog) with images of the repecting animal meow
-"""
+def plot_learning_curve(history):
+  history_dict = history.history
+  loss_values = history_dict['loss']
+  val_loss_values = history_dict['val_loss']
+  accuracy = history_dict['accuracy']
+  val_accuracy = history_dict['val_accuracy']
+
+  epochs = range(1, len(loss_values) + 1)
+  fig, ax = plt.subplots(1, 2, figsize=(14, 6))
+
+  # plot accuracy
+  ax[0].plot(epochs, accuracy, 'bo', label='Training accuracy')
+  ax[0].plot(epochs, val_accuracy, 'b', label='Validation accuracy')
+  ax[0].set_title('Training & Validation Accuracy')
+  ax[0].set_xlabel('Epochs')
+  ax[0].set_ylabel('Accuracy')
+  ax[0].legend()
+
+  # plot loss
+  ax[1].plot(epochs, loss_values, 'bo', label='Training loss')
+  ax[1].plot(epochs, val_loss_values, 'b', label='Validation loss')
+  ax[1].set_title('Training & Validation Loss')
+  ax[1].set_xlabel('Epochs')
+  ax[1].set_ylabel('Loss')
+  ax[1].legend()
+
+  plt.savefig("accuracy&loss.png")
+ 
 if __name__ == "__main__":
   resolution = 100 # 100x100x3
   data_generator = ImageDataGenerator(rescale=1./255, shear_range=0.2, zoom_range=0.2, rotation_range=45, horizontal_flip=True, vertical_flip=True, validation_split = .2, brightness_range=[0.4,1.5])
   training_set = data_generator.flow_from_directory('./train', target_size=(resolution, resolution), batch_size=32, class_mode='binary', subset='training')
   validation_set = data_generator.flow_from_directory('./validation', target_size=(resolution, resolution), batch_size=32, class_mode='binary', shuffle = False, subset='validation')
 
-  model = create_model(resolution, load_previous_model=True)
-  train(training_set, validation_set, epochs=5, save=True)
+  model = create_model(resolution, load_previous_model=False)
+  history = train(training_set, validation_set, epochs=100, save=True)
+  plot_learning_curve(history)
