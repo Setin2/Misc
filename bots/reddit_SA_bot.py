@@ -9,11 +9,11 @@ reddit = praw.Reddit(
 
 sia = SentimentIntensityAnalyzer()
 
-"""
-    Simple method for checking the polarity score of a subreddit of your choice
-    Must specify how many posts to include 
-"""
 def get_subreddit_polarity(subreddit_name, num_posts):
+""" Return te polarity score of a subreddit
+
+Must specify how many posts to include 
+"""
     comments = set()
     compound_polarity_scores = []
     for submission in reddit.subreddit(subreddit_name).hot(limit=num_posts):
