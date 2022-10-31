@@ -19,20 +19,20 @@ reddit = praw.Reddit(
     user_agent="<console:personal_weeb:1.0",
 )
 
-'''
-  We first get the pronunciation of the word split in "phones"
-  Then we count how many phones include stress marks (basically nr of syllables)
-  Returns: number of syllables in a word
-'''
 def count_syllables(word):
+'''Return the number of syllables in a word
+
+We first get the pronunciation of the word split in "phones"
+Then we count how many phones include stress marks (basically nr of syllables)
+'''
   word = re.sub(r'[^a-z ]+', '', word)
   return len([phone for phone in pro[word][0] if phone[len(phone) - 1].isdigit()])
 
-''' 
-  We get the number of syllables in each word, if the total isnt 17, we cant make a haiku
-  Returns: list of (word, syllables) tuples
-'''
 def count_syllables_sentence(sentence):
+'''Return a list of (word, syllables) tuples
+
+We get the number of syllables in each word, if the total isnt 17, we can't make a haiku
+'''
   words_and_syllables = []
   num_syllables = 0
   for word in sentence.lower().split():
@@ -42,10 +42,9 @@ def count_syllables_sentence(sentence):
   if num_syllables == 17:
     return words_and_syllables
   
-'''
-  Return: haiku given a list of (word, syllables) tuples
-'''
 def construct_haiku(words_and_syllables):
+'''Return a haiku given a list of (word, syllables) tuples
+'''
   haiku = ""
   syllables_parsed = 0
   for word, syllable in words_and_syllables:
@@ -56,20 +55,20 @@ def construct_haiku(words_and_syllables):
   return haiku
 
 
-"""
-  Caller method for construct_haiku
-"""
 def get_haiku(sentence):
+""" Return a haiku given a sentence
+
+Caller method for construct_haiku
+"""
   words_and_syllables = count_syllables_sentence(sentence)
   if words_and_syllables is None:
     return
   else: return construct_haiku(words_and_syllables)
 
-'''
-  Prints haikus from subreddit comments
-'''
 def get_haikus_from_subreddit(subreddit_name, num_posts):
-    comments = []
+'''Print haikus from subreddit comments
+'''
+  comments = []
     for submission in reddit.subreddit(subreddit_name).hot(limit=num_posts):
         for comment in submission.comments:
             if hasattr(comment, "body"):
@@ -77,10 +76,9 @@ def get_haikus_from_subreddit(subreddit_name, num_posts):
                 get_haiku(comment.body)
                 print()
 
-'''
-  Method to test our program with 2 sentences (1 which is a haiku and 1 which isnt)
-'''
 def test_haiku():
+'''Test our program with 2 sentences (1 which is a haiku and 1 which isnt)
+'''
   print(get_haiku("This sentence can not be transformed into a haiku"))
   print(get_haiku("A summer river being crossed how pleasing with sandals in my hands!"))
 
