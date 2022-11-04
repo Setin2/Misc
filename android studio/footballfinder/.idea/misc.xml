@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mathi/AndroidStudioProjects/FootballFinder/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/drawable/button.xml" value="0.3828125" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/drawable/divider.xml" value="0.3828125" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/activity_add_event.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/activity_join.xml" value="0.2346014492753623" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/activity_maps.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/activity_marker_events.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/activity_my_joined_events.xml" value="0.22" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/content_add_event.xml" value="0.2346014492753623" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/content_scrolling.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/fragment_first.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/fragment_second.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/layout/list_events.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/menu/map_menu.xml" value="0.1" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/menu/mapmanu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/menu/menu_map.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/mathi/Documents/GitHub/footbalfinder/footballfinder/app/src/main/res/menu/menu_marker_events.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/border.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/button.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/divider.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.225" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/ic_menu_camera.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/inputs.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/drawable/side_nav_bar.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_add_event.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_main2.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_maps.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_marker_events.xml" value="0.25" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_menu.xml" value="0.36367753623188404" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/activity_sign_up.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/app_bar_main.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/app_bar_main2.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/content_add_event.xml" value="0.3442028985507246" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/content_main.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/content_main2.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/content_menu.xml" value="0.36367753623188404" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/content_scrolling.xml" value="0.23861967694566813" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/fragment_slideshow.xml" value="0.36367753623188404" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/list_events.xml" value="0.3578125" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/layout/nav_header_menu.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/menu/activity_menu_drawer.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/menu/main_activity2.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/menu/menu.xml" value="0.371875" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/stefa/footballfinder/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3880208333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
